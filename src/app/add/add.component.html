@@ -1,0 +1,41 @@
+<div style="text-align: center;">
+  <h1>Add Students Form</h1>
+</div>
+
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> Your data added successfully!
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="form-group" style="border: 40px; top: 65%;">
+  <form [formGroup]="add" (ngSubmit)="createPosts()">
+      <div class="form-group">
+          <label style="color: rgb(133, 133, 138); font-size: 20px;"><b>ID</b> :</label>
+          <input type="string" class="form-control" placeholder="Enter ID" formControlName="id"
+              style="width: 600px; height: 50px;"> &nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="form-group">
+          <label style="color: rgb(133, 133, 138); font-size: 20px;"><b>Name</b> :</label>
+          <input type="text" class="form-control" placeholder="Enter your Name" formControlName="name"
+              style="width: 600px; height: 50px;"> &nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="form-group">
+          <label style="color: rgb(133, 133, 138); font-size: 20px;"><b>Address</b> :</label>
+          <input type="text" class="form-control" placeholder="Enter your Address" formControlName="address"
+              style="width: 600px; height: 50px;"> &nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="form-group">
+          <label style="color: rgb(133, 133, 138); font-size: 20px;"><b>Mobile No</b> :</label>
+          <input type="number" class="form-control" placeholder="Enter your phone No" formControlName="mobile"
+              style="width: 600px; height: 50px;"> &nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="form-group">
+          <label style="color: rgb(133, 133, 138); font-size: 20px;"><b>Email Address</b></label>
+          <input type="email" class="form-control" placeholder="Enter your Email" formControlName="email"
+              style="width: 600px; height: 50px;"> &nbsp;&nbsp;&nbsp;
+      </div>
+      <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+</div>

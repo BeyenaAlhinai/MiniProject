@@ -1,0 +1,54 @@
+
+<div style="text-align: center;">
+    <h1>Update / Edit Students Form</h1>
+
+    <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Success!</strong> Your data Updated Successfully!
+      <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
+
+<div class="form-group" style="border: 40px; top: 65%; ">
+  <form [formGroup]="edit" (ngSubmit)="updatestudent()">
+
+  </form>
+  <div>
+    <h5 style="text-align: left; color: rgb(133, 133, 138);">ID:</h5>
+  </div>
+  <div class="form-group">
+
+    <input type="email" class="form-control" placeholder="Enter ID" formControlName="id"  style="width: 600px; height:50px; ">&nbsp;&nbsp;&nbsp;
+  </div>
+  <div>
+    <h5 style="text-align: left; color: rgb(133, 133, 138);">Name:</h5>
+  </div>
+  <div class="form-group">
+
+    <input type="text" class="form-control"  placeholder="Enter your Name " formControlName="name"  style="width: 600px; height:50px; "> &nbsp;&nbsp;&nbsp;
+  </div>
+  <div>
+    <h5 style="text-align: left; color: rgb(133, 133, 138);">Address:</h5>
+  </div>
+  <div class="form-group">
+      
+      <input type="text" class="form-control"  placeholder="Enter your Address" formControlName="address"  style="width: 600px; height:50px; "> &nbsp;&nbsp;&nbsp;
+    </div>
+    <div>
+      <h5 style="text-align: left;color: rgb(133, 133, 138);">Mobile No :</h5>
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control"  placeholder="Enter your phone No" formControlName="mobile"   style="width: 600px; height:50px; ">&nbsp;&nbsp;&nbsp;
+    </div>
+    <div>
+      <h5 style="text-align: left;color: rgb(133, 133, 138);">Email Address:</h5>
+    </div>
+    <div class="form-group">
+     
+      <input type="email" class="form-control"  placeholder="Enter your Email "  formControlName="email" style="width: 600px; height:50px; ">&nbsp;&nbsp;&nbsp;
+    </div>
+    <button type="submit" class="btn btn-primary"  >Update</button>
+
+
+  </div>

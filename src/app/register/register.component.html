@@ -1,0 +1,78 @@
+
+
+<section class="text-center text-lg-start d-flex justify-content-center align-items-center" style="min-height: 90vh; min-width: 270vh;">
+  <div class="container">
+
+    <div class="row g-0 align-items-center">
+
+      <div class="col-lg-4 mb-5 mb-lg-0">
+
+        <div class="card cascading-right" style="
+            
+            margin-right: -50px;
+
+            background: hsla(0, 0%, 100%, 0.55);
+
+            backdrop-filter: blur(30px);
+
+            border-radius: 10px;">
+
+          <div class="card-body p-4 shadow-4 text-center">
+
+            <h2 class="fw-bold mb-4" style="color: blue;">Register Form</h2>
+
+            <form   [formGroup]="createUser" (ngSubmit)="regUser">
+
+              <div class="row">
+
+                <div class="col-md-6 mb-4">
+
+                </div>
+
+              </div><br>
+
+ 
+              <div class="form-outline mb-4">
+                <h5 style="text-align: left; color: red;">ID :</h5>
+                <input type="number" class="form-control" formControlName="number"   name="Id" >
+              </div>
+
+              <div class="form-outline mb-4">
+                <h5 style="text-align: left; color: red;">Name :</h5>
+                <input type="text" class="form-control" formControlName="name"   name="name">
+              </div>
+
+              <div class="form-outline mb-4">
+                <h5 style="text-align: left; color: red;">Address :</h5>
+                <input type="text" class="form-control"  formControlName="name"  name="name">
+              </div>
+
+              <div class="form-outline mb-4">
+                <h5 style="text-align: left; color: red;">Mobile :</h5>
+                <input type="number" class="form-control" formControlName="number"   name="mobile">
+              </div>
+
+              <div class="form-outline mb-4">
+                <h5 style="text-align: left; color: red;">email :</h5>
+                <input type="email" class="form-control" formControlName="email"   name="email">
+              </div>
+
+
+              <button type="submit" class="btn btn-primary btn-block mb-4" routerLink="/login"  >Sign in</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    
+    </div>
+
+  </div>
+
+
+
+</section>

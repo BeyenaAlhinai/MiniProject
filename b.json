@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": "2",
+      "name": "muna",
+      "address": "Bahla",
+      "mobile": "typicode",
+      "email": "typicode"
+    },
+    {
+      "id": "3",
+      "name": "reem",
+      "address": "Bahla",
+      "mobile": "typicode",
+      "email": "typicode"
+    },
+    {
+      "id": "4",
+      "name": "muna",
+      "address": "Bahla",
+      "mobile": "typicode",
+      "email": "typicode"
+    },
+    {
+      "id": "986",
+      "name": "ahmed",
+      "address": "jk",
+      "mobile": 8999,
+      "email": "Ah@ggiukskk.com"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name ": "json-server",
+      "address": "typicode",
+      "mobile": "typicode",
+      "email": "typicode"
+    }
+  ]
+}

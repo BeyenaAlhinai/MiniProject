@@ -1,0 +1,36 @@
+
+<table class="table caption-top">
+    <caption>
+      List of users
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name </th>
+        <th scope="col"> Address</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Email</th>
+        <th scope="col">Action</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let posts of collection">
+        <td>{{posts.id}}</td>
+        <td>{{posts.name}}</td>
+        <td>{{posts.address}}</td>
+        <td>{{posts.mobile}}</td>
+        <td>{{posts.email}}</td>
+        <td>
+          <a routerLink="/update/{{posts.id}}">
+            <i class="fa fa-edit" style="font-size:30px;color:rgb(70, 61, 188)"></i>
+          </a>
+          <span (click)="deletestudent(posts.id)">
+            <i class="fa fa-trash" style="font-size:48px;color:red"></i>
+          </span>
+          
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
